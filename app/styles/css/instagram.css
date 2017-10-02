@@ -1,0 +1,450 @@
+.instagram {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+  .instagram__header {
+    width: 100%;
+    height: 8%;
+    background-color: #FFF;
+    position: relative;
+    border-bottom: 1px solid #dedbdb;
+  }
+    .navBar {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+      @keyframes showInstagramHeader {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        70% {
+          transform: scale(1.3);
+          opacity: 1;
+        }
+        80% {
+          transform: scale(0.7);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .camera__icon {
+        width: 50px;
+        height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        opacity: 0;
+        animation: showInstagramHeader .8s ease forwards;
+      }
+        .camera--body {
+          width: 25px;
+          height: 17.5px;
+          border: 2px solid #000;
+          border-radius: 5px;
+        }
+        .camera--eye {
+          width: 10px;
+          height: 10px;
+          border: 2px solid #000;
+          border-radius: 50%;
+          position: absolute;
+        }
+        .camera--head {
+          width: 10px;
+          height: 1px;
+          border: 2px solid #000;
+          border-bottom: 2px solid #FFF;
+          border-radius: 5px;
+          position: absolute;
+          top: 2%;
+        }
+      .homepage__icon {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #000;
+        transform: scale(0);
+        opacity: 0;
+        animation: showInstagramHeader .8s ease forwards;
+      }
+        .homepage--name {
+          color: #000;
+          margin: 0;
+          font-size: 1.2em;
+        }
+      .chatroom__icon {
+        width: 50px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        opacity: 0;
+        animation: showInstagramHeader .8s ease forwards;
+      }
+        .chatroom {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #000;
+          border-radius: 50%;
+        }
+  .instagram__timeline {
+    width: 100%;
+    height: 16%;
+    border-bottom: 1px solid #dedbdb;
+  }
+    .timelineList {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+      .timelineList__item {
+        width: 75px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+        .timeline--userPic {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background: linear-gradient(to bottom left,rgb(64,93,230),rgb(88,81,219),rgb(131,58,180),rgb(193,53,132),rgb(225,48,108),rgb(253,29,29),rgb(245,96,64),rgb(247,119,55),rgb(252,175,69),rgb(255,220,128));
+          position: absolute;
+          /*top: 15%;*/
+          top: 50%;
+          opacity: 0;
+          /*animation: showTimeLineUserPic 1.25s ease forwards;*/
+        }
+        .firstTimelineUserPic {
+          animation: showTimeLineUserPic 1.25s 1s ease forwards;
+        }
+        .secondTimelineUserPic {
+          animation: showTimeLineUserPic 1.25s 1.1s ease forwards;
+        }
+        .thirdTimelineUserPic {
+          animation: showTimeLineUserPic 1.25s 1.2s ease forwards;
+        }
+        .fourthTimelineUserPic {
+          animation: showTimeLineUserPic 1.25s 1.3s ease forwards;
+        }
+        @keyframes showTimeLineUserPic {
+          0%{
+            top: 60%;
+            opacity: 0;
+          }
+          30% {
+            top: 5%;
+            transform: scaleY(0.6);
+            opacity: 1;
+          }
+          50% {
+            top: 25%;
+            transform: scaleY(0.8);
+            opacity: 1;
+          }
+          70% {
+            top: 5%;
+            transform: scaleY(1);
+            opacity: 1;
+          }
+          100%{
+            top: 15%;
+            transform: scaleY(1);
+            opacity: 1;
+          }
+        }
+          .white {
+            width: 45px;
+            height: 45px;
+            background-color: #FFF;
+            border-radius: 100%;
+            transform: scale(0.9,0.9);
+          }
+          .gray {
+            width: 45px;
+            height: 45px;
+            background-color: #dedbdb;
+            border-radius: 100%;
+            transform: scale(0.9,0.9);
+          }
+        .timeline--userName {
+          margin: 0;
+          color: #000;
+          font-size: 0.65em;
+          position: absolute;
+          opacity: 0;
+          bottom: 0%;
+          animation: showUserName 0.5s 0.9s ease forwards;
+        }
+        @keyframes showUserName {
+          0% {
+            opacity: 0;
+            bottom: 0%;
+          }
+          100% {
+            opacity: 1;
+            bottom: 5%;
+          }
+        }
+  .instagram__content {
+    width: 100%;
+    height: 68%;
+  }
+    .instagram__content__wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+      .instagram__content__wrap--userInfo {
+        width: 100%;
+        height: 12.5%;
+        position: relative;
+        top: 10%;
+        opacity: 0;
+        animation: showContent .3s 1.7s ease forwards;
+      }
+      @keyframes showContent {
+        0% {
+          top: 10%;
+          opacity: 0;
+        }
+        100% {
+          top: 0%;
+          opacity: 1;
+        }
+      }
+        .instagram__content__wrap__userPic {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background-color: hsl(0, 0%, 95%);
+          border-radius: 50%;
+          top: 9px;
+          left: 10px;
+        }
+        .instagram__content__wrap__userName {
+          position: absolute;
+          top: 15px;
+          left: 45px;
+          width: 80px;
+          margin: 0;
+          color: #000;
+          font-size: 0.7em;
+        }
+        .instagram__content__wrap__control {
+          position: absolute;
+          top: 10.5px;
+          right: 10px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+          .blackDot {
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 50%;
+          }
+      .instagram__content__wrap--image {
+        width: 100%;
+        height: 50%;
+        background-color: hsl(0, 0%, 95%);
+        opacity: 0;
+        position: relative;
+        animation: showContent .3s 1.8s ease forwards;
+      }
+      .instagram__content__wrap--interaction {
+        width: 100%;
+        height: 12.5%;
+        position: relative;
+        /*animation*/
+        opacity: 0;
+        animation: showContent .3s 1.9s ease forwards;
+      }
+        .instagram__content__wrap__bottomLine {
+          width: 90%;
+          height: 1px;
+          background-color: hsl(0, 0%, 95%);
+          position: absolute;
+          bottom: 0%;
+          left: 5%;
+        }
+        .interaction--button {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: hsl(0, 0%, 95%);
+        }
+        .likeButton {
+          position: absolute;
+          top: 8px;
+          left: 10px;
+        }
+        .messageButton {
+          position: absolute;
+          top: 8px;
+          left: 45px;
+        }
+        .sendingButton {
+          position: absolute;
+          top: 8px;
+          left: 80px;
+        }
+        .signButton {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          border-radius: 0;
+          background-color: transparent;
+          transform: perspective(100px) translateZ(100px);
+          animation: showSignButton 0.3s 3.5s ease forwards;
+        }
+        @keyframes showSignButton {
+          0% {
+            transform: perspective(100px) translateZ(100px);
+          }
+          100% {
+            transform: perspective(100px) translateZ(0px);
+          }
+        }
+          .svgSign {
+            width: 100%;
+            height: 100%;
+          }
+            .pathSign {
+              stroke: #000;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              fill: transparent;
+              /*stroke-dasharray: 900;
+              stroke-dashoffset: 900;*/
+            }
+      .instagram__content__wrap--message {
+        width: 100%;
+        height: 25%;
+        /*animation*/
+        /*opacity: 0;*/
+      }
+        .instagram--messageBoard {
+          width: 90%;
+          height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          flex-direction: column;
+        }
+          .instagram--messageBoard__message {
+            width: 100%;
+            margin-top: 3px;
+          }
+            @keyframes showText {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+            .instagram--username {
+              display: inline;
+              opacity: 0;
+              animation: showText .5s 2.2s ease forwards;
+            }
+            .instagram--message {
+              display: inline;
+              font-size: 0.8em;
+              opacity: 0;
+              animation: showText .5s 2.2s ease forwards;
+            }
+            .instagram--checkMessage {
+              font-size: 0.8em;
+              font-weight: bold;
+              color: hsl(0, 0%, 95%);
+              margin: 0;
+            }
+            .instagram--pastTime {
+              font-size: 0.6em;
+              font-weight: bold;
+              color: hsl(0, 0%, 95%);
+              margin: 0;
+              display: inline;
+              opacity: 0;
+              animation: showText .5s 2.5s ease forwards;
+            }
+            .instagram--translation {
+              font-size: 0.6em;
+              font-weight: bold;
+              margin: 0;
+              display: inline;
+              opacity: 0;
+              animation: showText .5s 2.5s ease forwards;
+            }
+  .instagram__footer {
+    width: 100%;
+    height: 8%;
+    background-color: #FFF;
+    border-top: 1px solid #dedbdb;
+    position: relative;
+  }
+    .controlBar {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transform: skew(-31deg);
+      position: absolute;
+      left: -102%;
+      opacity: 0;
+      animation: showControlBar .5s 2.8s ease forwards;
+    }
+    @keyframes showControlBar {
+      0% {
+        transform: skew(-31deg);
+        left: -102%;
+        opacity: 0;
+      }
+      50% {
+        transform: skew(-31deg);
+        left: 11.5px;
+        opacity: 1;
+      }
+      80% {
+        transform: skew(15deg);
+        left: -10%;
+        opacity: 1;
+      }
+      100% {
+        transform: skew(0deg);
+        left: 0%;
+        opacity: 1;
+      }
+    }
+      .controlBar__item {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: hsl(0, 0%, 95%);
+      }

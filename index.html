@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>instagram</title>
+    <link rel="stylesheet" href="app/styles/css/normalize.css"/>
+    <link rel="stylesheet" href="app/styles/css/main.css"/>
+    <link rel="stylesheet" href="app/styles/css/instagram.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iphone">
+        <div class="iphone--screen">
+          <header class="screen--header">
+            <div class="signal">
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+              <span class="signal--power"></span>
+            </div>
+            <div class="serviceProvider">中華電信</div>
+            <div class="signalType">4G</div>
+            <div class="time">
+              <input type="text" class="day" value="上午"/>
+              <input type="text" class="hour" value="9"/>
+              <span>:</span>
+              <input type="text" class="minute"  id="timeMinute" value="38"/>
+            </div>
+            <input type="text" class="powerLeft" value="80%"/>
+            <div class="power">
+              <div class="power--body"></div>
+              <div class="power--head"></div>
+            </div>
+          </header>
+          <!-- instagram view -->
+          <div class="screen--view" id="firstFilm">
+            <div class="instagram">
+              <header class="instagram__header">
+                <ul class="navBar">
+                  <li class="camera__icon">
+                    <div class="camera--head"></div>
+                    <div class="camera--body"></div>
+                    <div class="camera--eye"></div>
+                  </li>
+                  <li class="homepage__icon">
+                    <p class="homepage--name">Instagram</p>
+                  </li>
+                  <li class="chatroom__icon">
+                    <div class="chatroom"></div>
+                  </li>
+                </ul>
+              </header>
+              <div class="instagram__timeline">
+                <ul class="timelineList">
+                  <li class="timelineList__item">
+                    <div class="timeline--userPic firstTimelineUserPic">
+                      <div class="white"></div>
+                    </div>
+                    <p class="timeline--userName">Instagram</p>
+                  </li>
+                  <li class="timelineList__item">
+                    <div class="timeline--userPic secondTimelineUserPic">
+                      <div class="white"></div>
+                    </div>
+                    <p class="timeline--userName">Instagram</p>
+                  </li>
+                  <li class="timelineList__item">
+                    <div class="timeline--userPic thirdTimelineUserPic">
+                      <div class="white"></div>
+                    </div>
+                    <p class="timeline--userName">Instagram</p>
+                  </li>
+                  <li class="timelineList__item">
+                    <div class="timeline--userPic fourthTimelineUserPic">
+                      <div class="white"></div>
+                    </div>
+                    <p class="timeline--userName">Instagram</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="instagram__content">
+                <div class="instagram__content__wrap">
+                  <div class="instagram__content__wrap--userInfo">
+                    <div class="instagram__content__wrap__userPic"></div>
+                    <p class="instagram__content__wrap__userName">Instagram</p>
+                    <div class="instagram__content__wrap__control">
+                      <div class="blackDot"></div>
+                      <div class="blackDot"></div>
+                      <div class="blackDot"></div>
+                    </div>
+                  </div>
+                  <div class="instagram__content__wrap--image"></div>
+                  <div class="instagram__content__wrap--interaction">
+                    <div class="interaction--button likeButton"></div>
+                    <div class="interaction--button messageButton"></div>
+                    <div class="interaction--button sendingButton"></div>
+                    <div class="interaction--button signButton">
+                      <svg class="svgSign">
+                        <path class="pathSign" d = "M0 0 H20 V25 L7.5 17.5 L0 25 Z"></path>
+                      </svg>
+                    </div>
+                    <div class="instagram__content__wrap__bottomLine"></div>
+                  </div>
+                  <div class="instagram__content__wrap--message">
+                    <div class="instagram--messageBoard">
+                      <div class="instagram--messageBoard__message">
+                        <h5 class="instagram--username">Instagram</h5>
+                        <p class="instagram--message">
+                          Hi this is Instagram Official Account, go ahead for checking out more details.
+                        </p>
+                      </div>
+                      <!-- <div class="instagram--messageBoard__message">
+                        <p class="instagram--checkMessage">查看全部36則回應</p>
+                      </div> -->
+                      <div class="instagram--messageBoard__message">
+                        <p class="instagram--pastTime">24分鐘前</p>
+                        <p class="instagram--translation">翻譯年糕</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="instagram__footer">
+                <div class="controlBar">
+                  <div class="controlBar__item home"></div>
+                  <div class="controlBar__item search"></div>
+                  <div class="controlBar__item creation"></div>
+                  <div class="controlBar__item like"></div>
+                  <div class="controlBar__item personality"></div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="iphone--earphone"></div>
+        <div class="iphone--camera"></div>
+        <div class="iphone--homeButton"></div>
+      </div>
+    </div>
+    <script src="app/script/js/instagram.js"></script>
+  </body>
+</html>
